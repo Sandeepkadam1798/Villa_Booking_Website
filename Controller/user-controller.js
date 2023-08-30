@@ -312,7 +312,7 @@ if (status === "booked") {
 
 await property.save();
 
-      res.redirect(`http://localhost:3000/paymentsuccessful?&orderid=${razorpay_order_id}&proid=${propertyId}&checkin=${checkIn}&checkout=${checkOut}&amount=${amountpaid}`);
+      res.redirect(`https://regal-travesseiro-1a1ead.netlify.app/paymentsuccessful?&orderid=${razorpay_order_id}&proid=${propertyId}&checkin=${checkIn}&checkout=${checkOut}&amount=${amountpaid}`);
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: "Internal server error" });
